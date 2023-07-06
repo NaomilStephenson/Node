@@ -22,7 +22,7 @@ const prompt = promptSync ();
     // mutltiple of 5 says buzz in green
     // mutltiple of 7 says zing in blue
 
-    // for (let n = 1; n <= 100; n++){
+    // for (let n = 1; n <= 150; n++){
     //     let m3 = (n % 3);
     //     let m5 = (n % 5);
     //     let m7 = (n % 7);
@@ -50,7 +50,7 @@ const prompt = promptSync ();
     //     else {
     //         console.log(n);
     //     }
-    // }
+    // }s
 
 
 // single player rock paper scissors
