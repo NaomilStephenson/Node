@@ -3,16 +3,18 @@ const promptSync = require('prompt-sync');
 const prompt = promptSync ();
 
 // print 3 lines
-
     // console.log("Hello World".cyan); // one with coloured text
     // console.log("Highlighted".bgGrey); // one with coloured background
     // console.log("WARNING".red.bold.bgYellow); // one with both text and background
 
 
 // print 1 - 100 with random colours - DID NOT WORK!
-
     // for (let n = 1; n <= 10; n++){
     //     console.log(n);
+    // }
+// Solution
+    // for (let n = 1; n <= 10; n++){
+    //     console.log(n.toString().random);
     // }
 
 // remake fizzbuzzzing but..
