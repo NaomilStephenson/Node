@@ -16,7 +16,7 @@ let read =URL=> {
     // PROMISES
     // they wait for a callback
     // success or failure
-    fetch(URL)
+    fetch(URL, (method : 'get'))                                  // Default method is get
         .then( (response) => {
             if (response.status !== 200){
                 console.error(`status: ${response.status}`);
@@ -63,13 +63,12 @@ let create = URL => {
 
 // GET method for Picture - doesn't work
 let pic = URL => {
-    let image = document.createElement("img");
     axios
         .get(URL)
         .then( (response) => {
-            // Adaptation for Pictures
-            // output.innerText = JSON.stringify(response.data);
-            image.src = response.data.url
+            // Adaptation for Pictures           
+            let image = document.createElement("img");
+            image.src = response.data.url;
             output.append(image);
         }).catch((error) => {
             console.error(error);
