@@ -10,7 +10,6 @@
 const input = document.getElementById('input');
 const button = document.getElementById('button');
 const output = document.getElementById('output');
-let image = document.createElement("img");
 
 /* DEFAULT JAVASCRIPT
 let read =URL=> {
@@ -62,13 +61,14 @@ let create = URL => {
 }
 // button.onclick =()=> create(input.value);
 
-// GET method for Picture
+// GET method for Picture - doesn't work
 let pic = URL => {
+    let image = document.createElement("img");
     axios
         .get(URL)
         .then( (response) => {
             // Adaptation for Pictures
-            output.innertext = JSON.stringify(response.data);
+            // output.innerText = JSON.stringify(response.data);
             image.src = response.data.url
             output.append(image);
         }).catch((error) => {
