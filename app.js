@@ -22,10 +22,10 @@ console.log(`Using Memory = ${used}`);
 console.log(`Using % = ${percentused}`);
 */
 
-function freeRam =()=> {
+let freeRam =()=> {
     process.stdout.clearLine(0);
     process.stdout.cursorTo(0);
-    process.stdout.write(`Using % = ${percentused}`);
+    process.stdout.write(`Using = ${percentused}`);
 };
 
 setInterval(freeRam(),500);
